@@ -102,7 +102,8 @@ At Toronto Pearson Airport, a sudden gate malfunction forces an arriving aircraf
 Ideally, this is a scenario that airports want to avoid. As such, your challenge is to develop a solution that assigns airport gates to arriving and departing flights over time. Your solution must:  
 - Respect aircraft-gate compatibility
 - Handle airline preferences and security concerns
-- Adapt dynamically to delays, outages and emergencies (cascading changes)  Minimize conflicts, delays and wasted time (optimization) 
+- Adapt dynamically to delays, outages and emergencies (cascading changes)
+- Minimize conflicts, delays and wasted time (optimization) 
 
 #### Potential Solutions:
   * Greedy scoring-aware assignment algorithm [Supported](gate-management-system/solution_scored.py)
