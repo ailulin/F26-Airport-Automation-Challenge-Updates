@@ -120,7 +120,7 @@ Your job is to come up with a solution that assigns flights to gates while takin
 
 This is the most structured coding subproblem. You may write your own assignment algorithm or build a larger tool around the supplied baseline.
 
-[Open the Gate Management System challenge](gate-management-system/README.md).
+[Open the Gate Assignment Subproblem](gate-assignment-subproblem/README.md).
 
 ### [Passenger Clearance Subproblem](passenger-clearance-subproblem/README.md)
 ### [Insert Image]
