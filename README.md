@@ -123,7 +123,7 @@ This is the most structured coding subproblem. You may write your own assignment
 [Open the Gate Management System challenge](gate-management-system/README.md).
 
 ### [Passenger Clearance Subproblem](passenger-clearance-subproblem/README.md)
-
+### [Insert Image]
 #### The Problem
 A school group of 32 passengers arrives at the airport to check in for the same flight less than an hour before the check-in deadline. Although the passengers are travelling together, each person has different document requirements, seat assignments and baggage information. Most passengers are cleared immediately, but several require additional document review. 
 
@@ -146,7 +146,7 @@ Your challenge is to develop a solution that quickly adapts the existing passeng
 [Open the Passenger Clearance Subproblem](passenger-clearance-subproblem/README.md).
 
 ### [Aircraft Load Subproblem](passenger-clearance-subproblem/README.md)
-
+### [Insert Image]
 #### The Problem
 A mechanical issue causes the airline to replace the originally scheduled aircraft with a smaller aircraft shortly before departure. The new aircraft has different seating, baggage capacity and weight-and-balance-limits. 
 
