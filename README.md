@@ -49,7 +49,6 @@ Airport systems are message driven and closely connected. A passenger update in 
 
 As you make your solution this weekend, use the [judging criteria](#judging-criteria) to guide your decisions and demonstration.
 
-## Sub-Problems
 ## Background 
 
 Airlines and airports have suites of software solutions to manage this complicated web of logistics. You can choose to solve your subproblem with these software solutions. Some common software suites are:
@@ -61,13 +60,14 @@ Examples of Baggage Handling Systems include SmartBag by Brock Solutions and Ama
 A Gate Management System (GMS) assigns arriving and departing aircraft to airport gates. It must account for aircraft size, timing, gate equipment, passenger needs, customs rules, cargo restrictions, and disruptions such as delays or outages. 
 
 Examples of Gate Management Systems include Better Stand & Gate by Copenhagen Optimization and ResourceManager by Assaia. 
-### GMS
+### DCS
 A Departure Control System (DCS) handles everything that must happen before a passenger, and an aircraft are ready to leave check-in, identity and document checks, baggage acceptance, seat assignment, boarding passes, boarding status, and aircraft load control. 
 
 Examples of Departure Control Systems include: SmartLoad and SmartClear by Brock Solutions  
 ###
-Here are some software solutions from brock [https://www.brocksolutions.com/airports-and-airlines/#]
+You can check out the software solutions from Brock Solutions here: [https://www.brocksolutions.com/airports-and-airlines/#]
 
+## Sub-Problems
 ### [Baggage Handling System](baggage-handling-system/README.md)
 
 A Baggage Handling System (BHS) identifies, tracks, routes, and sorts bags through scanners, conveyors, diverters, make-up areas, and carousels. A bad routing decision can delay a passenger, a flight, or an entire baggage pier.
@@ -78,10 +78,7 @@ Your challenge is to design a BHS that can identify, track, route baggage throug
 
 ![Baggage moving through an airport conveyor system](images/conveyor_system.webp)
 
-#### Potential Directions
-
-Potential solution directions:
-
+#### Potential Solutions:
 * SecureBag - Security against malicious attempts at switching baggage [[Supported]](baggage-handling-system/securebag/README.md)
 * Control a real conveyor system to simulate bag movement through a network [[Supported]](baggage-handling-system/barcode-conveyor/README.md)
 * Error handling for unreadable, oversized, overweight, fragile, or untagged bags
@@ -104,10 +101,7 @@ Due to cancelations and delays, gate reassignments are unfortunately not uncommo
 
 Your job is to come up with a solution that assigns flights to gates while taking into consideration gate reassignments, emergency landings, walking distance, and other factors.
 
-### Potential Directions
-
-  Potential solution directions:
-
+#### Potential Solutions:
   * Greedy scoring-aware assignment algorithm [Supported](gate-management-system/solution_scored.py)
   * First-fit baseline algorithm [Supported](gate-management-system/solution_firstfit.py)
   * Disruption repair (delay, outage, equipment swap) [Supported](gate-management-system/solution_scored.py)
@@ -128,39 +122,45 @@ This is the most structured coding subproblem. You may write your own assignment
 
 [Open the Gate Management System challenge](gate-management-system/README.md).
 
-### [Departure Control System](departure-control-system/README.md)
+### [Passenger Clearance Subproblem](passenger-clearance-subproblem/README.md)
 
-![Departure control system](images/dcs.png)
+#### The Problem
+A school group of 32 passengers arrives at the airport to check in for the same flight less than an hour before the check-in deadline. Although the passengers are travelling together, each person has different document requirements, seat assignments and baggage information. Most passengers are cleared immediately, but several require additional document review. 
 
-A Departure Control System (DCS) manages the departure side of an airline operation, including check-in, identity and document verification, baggage acceptance, boarding passes, boarding status, and aircraft load control.
+Processing every passenger individually creates a long queue and increases the risk that the group will not complete check-in on time. However. Treating the entire group as one unit could cause individual document or baggage issues to be overloaded. Staff need a way to see which passengers are ready, which require attention and what issues remain unsolved. 
 
-#### Challenge
+Your challenge is to develop a solution that helps airport staff process large groups efficiently while maintaining accurate clearance information for each individual passenger. 
 
-Your challenge is to choose one part of that pipeline and make its state and decisions clear. A strong project might help an operator understand whether a passenger, bag, or flight is ready, what needs attention, and why.
+Your challenge is to develop a solution that quickly adapts the existing passenger and baggage plan to the replacement aircraft while maintaining safety weight-and-balance limits and minimizing operational disruption. 
 
-### Potential Directions
-
-  Potential solution directions:
-
+#### Potential Solutions:
   * Unified identity gateway: booking, doc checks, seat, bag declare, boarding pass, agent review, audit
   log [Supported](departure-control-system/README.md)
-  * Aircraft load control (weight/balance zone assignment) [Supported](departure-control-system/README.md)
   * Passenger-processing checkpoint monitor
   * Document-review assistant w/ mismatch confidence scoring
   * Baggage reconciliation linking declared bags to scan events
-  * Flight-close readiness aggregator (identity + load + baggage in one score)
   * Override/audit-log analytics for staff workload + rule-override patterns
   * Accessibility-first check-in flow variant
 
-#### Starting Points
 
-Two working examples show an appropriate scope:
+[Open the Passenger Clearance Subproblem](passenger-clearance-subproblem/README.md).
 
-- [Unified Identity Gateway](departure-control-system/unified-identity-gateway/README.md), covering identity checks, seat selection, baggage declaration, boarding passes, and agent review
-- [Load Control](departure-control-system/load-control/), covering aircraft weight-and-balance optimization
+### [Aircraft Load Subproblem](passenger-clearance-subproblem/README.md)
 
-[Open the Departure Control System challenge](departure-control-system/README.md).
+#### The Problem
+A mechanical issue causes the airline to replace the originally scheduled aircraft with a smaller aircraft shortly before departure. The new aircraft has different seating, baggage capacity and weight-and-balance-limits. 
 
+Passengers have already checked in, seats have been assigned, and baggage is being prepared for loading. Because the new aircraft has less capacity and different loading constraints, the existing passenger and baggage plan can no longer be used directly. Staff must quickly determine how to recognize passengers, baggage and available capacity while avoiding unnecessary delays. 
+
+Your challenge is to develop a solution that quickly adapts the existing passenger and baggage plan to the replacement aircraft while maintaining safety weight-and-balance limits and minimizing operational disruption. 
+
+#### Potential Solutions:
+  * Aircraft load control (weight/balance zone assignment) [Supported](departure-control-system/README.md)
+  * Baggage reconciliation linking declared bags to scan events
+  * Flight-close readiness aggregator (identity + load + baggage in one score)
+  * Override/audit-log analytics for staff workload + rule-override patterns
+    
+[Open the aircraft-load-subproblem](aircraft-load-subproblem/README.md).
 ## Development Approach
 
 1. Choose one clear operational problem.
