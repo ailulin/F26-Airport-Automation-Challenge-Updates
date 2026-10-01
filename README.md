@@ -97,9 +97,12 @@ Your solution may be software-only, hardware-assisted, simulation-based, or a mi
 
 #### The Problem
 
-Due to cancelations and delays, gate reassignments are unfortunately not uncommon. However, slow or inefficient gate reassignments can disrupt airport operations. When staff cannot identify and assign alternate gates, aircraft arrivals and departures are delayed. This ultimately leads to missed connections, disrupted flight plans, and general congestion in the airport. This is also very costly and damages the reputation of both the airport and the airline.   
+At Toronto Pearson Airport, a sudden gate malfunction forces an arriving aircraft to wait on the taxiway during a busy long weekend. Due to slow gate reassignment, passengers are left stuck on board. This leads to passengers missing connections and appointments. Inside the airport, crowds swell as other flights are also delayed, creating long walking distances and overwhelming staff. The airline ends up having to spend a significant amount of money on compensation and rebooking flights. The airline and airport are bombarded by complaints from very angry passengers from their customer service lines and on social media. 
 
-Your job is to come up with a solution that assigns flights to gates while taking into consideration gate reassignments, emergency landings, walking distance, and other factors.
+Ideally, this is a scenario that airports want to avoid. As such, your challenge is to develop a solution that assigns airport gates to arriving and departing flights over time. Your solution must:  
+- Respect aircraft-gate compatibility
+- Handle airline preferences and security concerns
+- Adapt dynamically to delays, outages and emergencies (cascading changes)  Minimize conflicts, delays and wasted time (optimization) 
 
 #### Potential Solutions:
   * Greedy scoring-aware assignment algorithm [Supported](gate-management-system/solution_scored.py)
