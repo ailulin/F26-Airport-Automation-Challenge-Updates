@@ -12,6 +12,9 @@ Your challenge is to develop a solution that helps airport staff process large g
 Your challenge is to develop a solution that quickly adapts the existing passenger and baggage plan to the replacement aircraft while maintaining safety weight-and-balance limits and minimizing operational disruption.
 
 ### Inputs and Expected Outputs 
+You'll likely be working with passenger lists, bookings, seat maps, aircraft layouts, baggage records, scan events, document fields, and schedules. As it is difficult to find perfect datasets, some of it will be missing, late, or contradictory. Design for that instead of around it.
+
+Whatever you build should make departure readiness legible at a glance: current status, what was decided, what still needs attention, and why.
 
 ## Potential Solutions
 A few possible scopes below. You can extend one or build something else entirely.
