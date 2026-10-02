@@ -1,16 +1,19 @@
-# Gate Management System
-
-A Gate Management System (GMS) assigns arriving and departing aircraft to airport gates. It must account for aircraft size, timing, gate equipment, passenger needs, customs rules, cargo restrictions, and disruptions such as delays or outages.
-
-At a real airport, shared flight information is stored in an Airport Operational Database. A Resource Management System uses that information to plan gates and stands, then sends changes to airlines, displays, ground handlers, and airport staff. This challenge focuses on the decision logic inside that process.
-
-Toronto Pearson International Airport (YYZ) is the setting. A working gate-assignment algorithm is already included as a starting point, pick somewhere to take it from there.
-
+# Gate Assignment Subproblem
 ## Table of Contents
 
 - [Challenge](#challenge)
 - [Potential Solutions](#potential-solutions)
 - [Resources](#resources)
+
+## The Problem
+At Toronto Pearson Airport, a sudden gate malfunction forces an arriving aircraft to wait on the taxiway during a busy long weekend. Due to slow gate reassignment, passengers are left stuck on board. This leads to passengers missing connections and appointments. Inside the airport, crowds swell as other flights are also delayed, creating long walking distances and overwhelming staff. The airline ends up having to spend a significant amount of money on compensation and rebooking flights. The airline and airport are bombarded by complaints from very angry passengers from their customer service lines and on social media.
+
+Ideally, this is a scenario that airports want to avoid. As such, your challenge is to develop a solution that assigns airport gates to arriving and departing flights over time. Your solution must:
+
+Respect aircraft-gate compatibility
+Handle airline preferences and security concerns
+Adapt dynamically to delays, outages and emergencies (cascading changes)
+Minimize conflicts, delays and wasted time (optimization)
 
 ## Challenge
 
