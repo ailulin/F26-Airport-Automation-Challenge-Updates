@@ -12,8 +12,8 @@ Created by Engineering IDEAs Clinic co-op students.
 - [Your Mission](#your-mission)
 - [Background Information](#Background)
 - [Sub-Problems](#sub-problems)
-  - [Baggage Loss](#baggage-loss)
-  - [Baggage Handling](#baggage-handling)
+  - [Lost Baggage Recovery](#lost-baggage-recovery)
+  - [Baggage Handling System](#baggage-handling-system)
   - [Gate Assignment](#gate-assignment-subproblem)
   - [Passenger Clearance](#passenger-clearance-subproblem)
   - [Plane Loading](#aircraft-loading-subproblem)
@@ -71,7 +71,25 @@ Examples of Departure Control Systems include: SmartLoad and SmartClear by Brock
 You can check out the software solutions from Brock Solutions here: [https://www.brocksolutions.com/airports-and-airlines/#]
 
 ## Sub-Problems
-### [Physical Baggage Handling](#physical-baggage-handling/README.md)
+### [Lost Baggage Recovery](baggage-loss-subproblem/README.md)
+
+Bags can become separated from their owners for various reasons. As they move through the baggage handling system the tags can become damaged, losing the passenger/destination information, or they could be missing when loading the plane. Bags could also be swapped by bad actors, with the tag being removed and placed on a different bag. All ways of losing a bag cause distress to the passenger, as they have lost their personal belongings. This, in turn, causes a negative reputation and loss of money for the airlines and airport who handled the baggage.
+
+#### Challenge
+
+Your challenge is to design a system or software to aid in the tracking of bags, to aid in preventing loss and to help return bags to their owners.
+
+![Baggage moving through an airport conveyor system](images/conveyor_system.webp)
+
+#### Potential Solutions:
+* SecureBag - Security against malicious attempts at switching baggage [[Supported]](baggage-handling-system/securebag/README.md)
+* Privacy-conscious tracking that avoids unnecessary passenger personal information
+
+Your solution may be software-only, hardware-assisted, simulation-based, or a mix of all three.
+
+[Open the Baggage Handling System challenge](baggage-handling-system/README.md).
+
+### [Baggage Handling System](#baggage-handling-system/README.md)
 
 To get from check-in to airplane, baggage travels over a large system of conveyors. The bags are taken through security screening, then must be routed to the correct terminal to be loaded onto the plane. (add more details). To get the bag to the correct terminal, the conveyor system needs to know where the bag needs to end up, to track where it is, and to move it onto the correct conveyors. It does this for thousands of bags, all at the same time.
 In addition to routing the bags, the conveyor system needs to have methods to detect foreign objects or people entering the conveyor system, to keep the people safe.
@@ -86,24 +104,6 @@ Control a real conveyor system to simulate bag movement through a network [[Supp
 * Foreign object or anomaly detection on conveyor tracks
 * Emergency stop, slowdown, or warning signals for conveyor operations
 * Simulation of bag movement through a simplified conveyor network
-
-Your solution may be software-only, hardware-assisted, simulation-based, or a mix of all three.
-
-[Open the Baggage Handling System challenge](baggage-handling-system/README.md).
-
-### [Baggage Loss](baggage-loss-subproblem/README.md)
-
-Bags can become separated from their owners for various reasons. As they move through the baggage handling system the tags can become damaged, losing the passenger/destination information, or they could be missing when loading the plane. Bags could also be swapped by bad actors, with the tag being removed and placed on a different bag. All ways of losing a bag cause distress to the passenger, as they have lost their personal belongings. This, in turn, causes a negative reputation and loss of money for the airlines and airport who handled the baggage.
-
-#### Challenge
-
-Your challenge is to design a system or software to aid in the tracking of bags, to aid in preventing loss and to help return bags to their owners.
-
-![Baggage moving through an airport conveyor system](images/conveyor_system.webp)
-
-#### Potential Solutions:
-* SecureBag - Security against malicious attempts at switching baggage [[Supported]](baggage-handling-system/securebag/README.md)
-* Privacy-conscious tracking that avoids unnecessary passenger personal information
 
 Your solution may be software-only, hardware-assisted, simulation-based, or a mix of all three.
 
