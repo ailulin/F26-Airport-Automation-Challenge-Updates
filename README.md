@@ -16,6 +16,7 @@ Created by Engineering IDEAs Clinic co-op students.
   - [Baggage Handling](#baggage-handling)
   - [Gate Assignment](#gate-assignment-subproblem)
   - [Passenger Clearance](#passenger-clearance-subproblem)
+  - [Plane Loading](#aircraft-loading-subproblem)
 - [Development Approach](#development-approach)
 - [Submission](#submission)
 - [Judging Criteria](#judging-criteria)
