@@ -106,7 +106,7 @@ Three broad directions — improve what's here, replace it, or build on top of i
 
 | Potential solution | Description | Starting point |
 | --- | --- | --- |
-| Improve the scoring-aware greedy algorithm | Take the included reference algorithm further: better cost function, smarter repair on disruption, less passenger walking. | [`solution_kd.py`](solution_kd.py) |
+| Improve the scoring-aware greedy algorithm | Take the included reference algorithm further: better cost function, smarter repair on disruption, less passenger walking. | [`solution_scored.py`](solution_scored.py) |
 | Build a new assignment algorithm | Write your own from scratch — e.g. a constraint solver using integer or constraint programming instead of a greedy heuristic. | [`evaluator.py`](evaluator.py) for the required interface |
 | Disruption repair | Keep the existing plan stable and move only flights affected by a delay, outage, or equipment change. | [`flight_data/cascade_2.json`](flight_data/cascade_2.json) |
 | Operator dashboard | Use the existing algorithm's output as a given and explain assignments, conflicts, and changes with a timeline or interactive control view. | [`visualize.py`](visualize.py) |
