@@ -8,22 +8,25 @@
 ## The Problem
 At Toronto Pearson Airport, a sudden gate malfunction forces an arriving aircraft to wait on the taxiway during a busy long weekend. Due to slow gate reassignment, passengers are left stuck on board. This leads to passengers missing connections and appointments. Inside the airport, crowds swell as other flights are also delayed, creating long walking distances and overwhelming staff. The airline ends up having to spend a significant amount of money on compensation and rebooking flights. The airline and airport are bombarded by complaints from very angry passengers from their customer service lines and on social media.
 
-Ideally, this is a scenario that airports want to avoid. As such, your challenge is to develop a solution that assigns airport gates to arriving and departing flights over time. Your solution must:
 
-Respect aircraft-gate compatibility
-Handle airline preferences and security concerns
-Adapt dynamically to delays, outages and emergencies (cascading changes)
-Minimize conflicts, delays and wasted time (optimization)
 
 ## Challenge
+Ideally, the above scenario is something that airports want to avoid. As such, your challenge is to develop a solution that assigns airport gates to arriving and departing flights over time. Your solution must:
 
-Do something useful with airport gate assignment. That could mean:
+- Respect aircraft-gate compatibility
+- Reduce walking distance
+- Save time
+- Handle airline preferences and security concerns
+- Adapt dynamically to delays, outages and emergencies (cascading changes)
+- Minimize conflicts, delays and wasted time (optimization)
+
+This can be done by:
 
 - improving the included algorithm
 - writing a different assignment algorithm from scratch
 - treating the algorithm as a given and building on top of it: a dashboard, an analysis tool, an alerting system, anything that makes the gate plan more useful to airport staff
 
-Pick a scope you can actually finish. A few of the questions a good solution might answer:
+Make sure to pick a scope you can actually finish. A few of the questions a good solution might answer:
 
 - Can the plan handle a full day's schedule and the disruptions that land on top of it?
 - Where does the current approach fall short, and what would fix it?
