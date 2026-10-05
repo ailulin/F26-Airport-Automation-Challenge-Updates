@@ -1,11 +1,14 @@
 # Passenger Clearance Subproblem
 
 ## Table of Contents
+- [The Problem](#the-problem)
+- [Potential Solutions](#potential-solutions)
+- [Resources](#resources)
 
 ## The Problem
 A school group of 32 passengers arrives at the airport to check in for the same flight less than an hour before the check-in deadline. Although the passengers are travelling together, each person has different document requirements, seat assignments and baggage information. Most passengers are cleared immediately, but several require additional document review.
 
-Processing every passenger individually creates a long queue and increases the risk that the group will not complete check-in on time. However. Treating the entire group as one unit could cause individual document or baggage issues to be overloaded. Staff need a way to see which passengers are ready, which require attention and what issues remain unsolved.
+Processing every passenger individually creates a long queue and increases the risk that the group will not complete check-in on time. However. Treating the entire group as one unit could cause individual document or baggage issues to be overloaded. Staff need a way to see which passengers are ready, which require attention and what issues remain unsolved. 
 
 Your challenge is to develop a solution that helps airport staff process large groups efficiently while maintaining accurate clearance information for each individual passenger.
 
@@ -25,14 +28,6 @@ A few possible scopes below. You can extend one or build something else entirely
 | Document-review assistant | Validate required fields, identify mismatches, and route uncertain cases to an agent. | [Identity-gateway rules](unified-identity-gateway/apps/api/src/rules/) |
 | Boarding-readiness dashboard | Combine document, seat, baggage, and boarding state into one operator view. | [Unified Identity Gateway](unified-identity-gateway/README.md) |
 | Baggage reconciliation tool | Link accepted bags to passengers and explain missing or unexpected scans. | [Baggage Handling System](../baggage-handling-system/README.md) |
-
-## Resources
-
-### Industry Context
-
-Departure operations run on a pile of data that keeps shifting until takeoff: passenger records, schedules, seat maps, aircraft configuration, baggage data, document checks, boarding status, load constraints. A DCS sits in the middle of it by taking all relevant data points and consolidate it so that a staff can easily analyze the data and find out where things can go wrong.
-
-Identity verification, baggage acceptance, security status, boarding, and manual review all end up affecting whether a passenger or flight is ready. Brock Solutions SmartSuite Enterprise, SITA Horizon DCS, and Amadeus Altéa Departure Control are real examples of systems doing this today, and the field is generally shifting from rigid rule-based workflows to adaptable automated systems.
 
 ### Evaluation
 
