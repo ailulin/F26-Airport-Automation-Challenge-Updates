@@ -44,6 +44,7 @@ Worth checking your solution against:
 | Code quality | Is the implementation modular, readable, and maintainable? |
 | Demonstration | Does the demo make the value and limitations clear? |
 
+## Resources
 ### Challenge Resources
 
 - [Unified Identity Gateway implementation](unified-identity-gateway/README.md)
