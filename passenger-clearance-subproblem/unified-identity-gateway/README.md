@@ -4,9 +4,9 @@
   <img width="328" height="65" alt="Unified Identity Gateway project banner" src="https://github.com/user-attachments/assets/94cde17a-04b2-47f6-bf4e-9e7f6566ccbb" />
 </div>
 
-The Unified Identity Gateway is a working example for the [Departure Control System challenge](../README.md). It combines booking lookup, document checks, seat selection, bag declaration, boarding-pass issuance, agent review, and audit logging in one check-in flow.
+The Unified Identity Gateway is a working example for the [Passenger Clearance Subproblem](../README.md). It combines booking lookup, document checks, seat selection, bag declaration, boarding-pass issuance, agent review, and audit logging in one check-in flow.
 
-The project demonstrates how several small decisions contribute to one passenger status: `NOT_STARTED`, `IN_PROGRESS`, `CLEARED`, `BLOCKED`, or `NEEDS_REVIEW`. That status is derived from the underlying document, seat, bag, and boarding-pass state.
+The project demonstrates how several small decisions contribute to one passenger status: `NOT_STARTED`, `IN_PROGRESS`, `CLEARED`, `BLOCKED`, or `NEEDS_REVIEW`. That status is derived from the underlying document, seat, bag, and boarding-pass state. 
 
 This is a learning prototype. The role switcher is not real authentication, and the identity checks are not suitable for production use.
 
