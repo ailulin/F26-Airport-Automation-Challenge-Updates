@@ -227,4 +227,4 @@ Every supplied scenario is designed to allow a solution with zero hard failures.
 - [IATA Ground Operations Manual](https://www.iata.org/en/publications/manuals/iata-ground-operations-manual/): standard procedures for gate, ramp, and jetbridge work
 - [IATA Safety Audit for Ground Operations](https://www.iata.org/en/programs/ops-infra/ground-operations/isago): the safety-audit framework used by ground-service providers
 - [ICAO Annex 14: Aerodromes](https://store.icao.int/en/annex-14-aerodromes): international context for aerodrome, apron, and stand design
-- [ICAO aerodrome safety information](https://www.icao.int/safety/Pages/default.aspx)
+- [ICAO aerodrome safety information](https://www.icao.int/operational-safety/contingency-aerodromes)
