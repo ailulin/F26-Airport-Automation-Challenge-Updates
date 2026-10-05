@@ -10,15 +10,18 @@ A mechanical issue causes the airline to replace the originally scheduled aircra
 
 Passengers have already checked in, seats have been assigned, and baggage is being prepared for loading. Because the new aircraft has less capacity and different loading constraints, the existing passenger and baggage plan can no longer be used directly. Staff must quickly determine how to recognize passengers, baggage and available capacity while avoiding unnecessary delays. 
 
-Your challenge is to develop a solution that quickly adapts the existing passenger and baggage plan to the replacement aircraft while maintaining safety weight-and-balance limits and minimizing operational disruption. 
+## Challenge
+Your challenge is to develop a solution that quickly adapts the existing passenger and baggage plan to the replacement aircraft while maintaining safety weight-and-balance limits and minimizing operational disruption.  
+
+To do this, you can either create your own solution or build off and improve the existing aircraft load control program. 
 
 ### Inputs and Expected Outputs
 
-You'll likely be working with aircraft layouts, baggage records, scan events, document fields, and schedules. As it is difficult to find perfect datasets, some of it will be missing, late, or contradictory. Design for that instead of around it.
+You'll likely be working with aircraft layouts, baggage records, etc. As it is difficult to find perfect datasets, some of them will be missing, late, or contradictory. Design for that instead of around it. 
 
 ## Potential Solutions
 
-A few possible scopes below. You can extend one or build something else entirely.
+A possible scope below. You can extend one or build something else entirely.
 
 | Potential solution | Description | Starting point |
 | --- | --- | --- |
