@@ -22,8 +22,6 @@ A few possible scopes below. You can extend one or build something else entirely
 | Potential solution | Description | Starting point |
 | --- | --- | --- |
 | Unified identity gateway | Combine booking lookup, document checks, seat selection, baggage declaration, boarding passes, and agent review. | [Working implementation](unified-identity-gateway/README.md) |
-| Aircraft load control | Assign passenger and cargo load to aircraft zones while respecting weight and balance limits. | [`load-control/`](load-control/) |
-| Passenger-processing monitor | Track passengers through checkpoints and highlight congestion or incomplete steps. | [Passenger-processing ideas](passenger-processing/README.md) |
 | Document-review assistant | Validate required fields, identify mismatches, and route uncertain cases to an agent. | [Identity-gateway rules](unified-identity-gateway/apps/api/src/rules/) |
 | Boarding-readiness dashboard | Combine document, seat, baggage, and boarding state into one operator view. | [Unified Identity Gateway](unified-identity-gateway/README.md) |
 | Baggage reconciliation tool | Link accepted bags to passengers and explain missing or unexpected scans. | [Baggage Handling System](../baggage-handling-system/README.md) |
@@ -43,7 +41,7 @@ Worth checking your solution against:
 | Area | What to look for |
 | --- | --- |
 | Workflow completeness | Does the process work from input to result? |
-| Data modelling | Are passengers, bags, flights, seats, or load zones represented clearly? |
+| Data modelling | Are passengers, bags, flights, and seats represented clearly? |
 | Decision quality | Are recommendations, predictions, and review flags useful? |
 | Exception handling | Does the system handle missing, inconsistent data, and edge cases? |
 | Dashboard clarity | Can an operator understand readiness and outstanding work from a glance? |
@@ -55,7 +53,6 @@ Worth checking your solution against:
 
 - [Unified Identity Gateway implementation](unified-identity-gateway/README.md)
 - [Passenger-processing project ideas](passenger-processing/README.md)
-- [Load-control implementation](load-control/)
 - [Identity-gateway challenge specification](unified-identity-gateway/docs/challenge-spec.md)
 
 ### Safety, Privacy, and Industry References
