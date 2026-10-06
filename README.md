@@ -10,13 +10,13 @@ Created by Engineering IDEAs Clinic co-op students.
 
 - [Quick Links](#quick-links)
 - [Your Mission](#your-mission)
-- [Background Information](#Background)
+- [Background Information](#background)
 - [Sub-Problems](#sub-problems)
   - [Lost Baggage Recovery](#lost-baggage-recovery)
   - [Baggage Handling System](#baggage-handling-system)
-  - [Gate Assignment](#gate-assignment-subproblem)
-  - [Passenger Clearance](#passenger-clearance-subproblem)
-  - [Plane Loading](#aircraft-loading-subproblem)
+  - [Gate Assignment](#gate-assignment)
+  - [Passenger Clearance](#passenger-clearance)
+  - [Aircraft Loading](#aircraft-loading)
 - [Development Approach](#development-approach)
 - [Submission](#submission)
 - [Judging Criteria](#judging-criteria)
@@ -26,9 +26,11 @@ Created by Engineering IDEAs Clinic co-op students.
 
 > **Navigation tip:** Use the headings in this document to move quickly between sections. Screen reader users can navigate by heading level.
 
+- [Lost Baggage Recovery challenge]
 - [Baggage Handling System challenge](baggage-handling-system/README.md)
-- [Gate Management System challenge](gate-management-system/README.md)
-- [Departure Control System challenge](departure-control-system/README.md)
+- [Gate Assignment challenge](gate-management-subproblem/README.md)
+- [Passenger Clearance challenge](passenger-clearance-subproblem/README.md)
+- [Aircraft Loading challenge](aircraft-load-subproblem/README.md)
 - [Submission expectations](#submission)
 - [Judging rubric](#judging-criteria)
 
@@ -109,7 +111,7 @@ Your solution may be software-only, hardware-assisted, simulation-based, or a mi
 
 [Open the Baggage Handling System challenge](baggage-handling-system/README.md).
 
-### [Gate Assignment Subproblem](gate-management-system/README.md)
+### [Gate Assignment](gate-management-system/README.md)
 
 ![Example of aircraft being assigned to airport gates](images/gate_assgt.png)
 
@@ -117,6 +119,7 @@ Your solution may be software-only, hardware-assisted, simulation-based, or a mi
 
 At Toronto Pearson Airport, a sudden gate malfunction forces an arriving aircraft to wait on the taxiway during a busy long weekend. Due to slow gate reassignment, passengers are left stuck on board. This leads to passengers missing connections and appointments. Inside the airport, crowds swell as other flights are also delayed, creating long walking distances and overwhelming staff. The airline ends up having to spend a significant amount of money on compensation and rebooking flights. The airline and airport are bombarded by complaints from very angry passengers from their customer service lines and on social media. 
 
+#### Challenge
 Ideally, this is a scenario that airports want to avoid. As such, your challenge is to develop a solution that assigns airport gates to arriving and departing flights over time. Your solution must:  
 - Respect aircraft-gate compatibility
 - Handle airline preferences and security concerns
@@ -144,16 +147,15 @@ This is the most structured coding subproblem. You may write your own assignment
 
 [Open the Gate Assignment Subproblem](gate-assignment-subproblem/README.md).
 
-### [Passenger Clearance Subproblem](passenger-clearance-subproblem/README.md)
+### [Passenger Clearance](passenger-clearance-subproblem/README.md)
 ### [Insert Image]
 #### The Problem
 A school group of 32 passengers arrives at the airport to check in for the same flight less than an hour before the check-in deadline. Although the passengers are travelling together, each person has different document requirements, seat assignments and baggage information. Most passengers are cleared immediately, but several require additional document review. 
 
 Processing every passenger individually creates a long queue and increases the risk that the group will not complete check-in on time. However. Treating the entire group as one unit could cause individual document or baggage issues to be overloaded. Staff need a way to see which passengers are ready, which require attention and what issues remain unsolved. 
 
+#### Challenge
 Your challenge is to develop a solution that helps airport staff process large groups efficiently while maintaining accurate clearance information for each individual passenger. 
-
-Your challenge is to develop a solution that quickly adapts the existing passenger and baggage plan to the replacement aircraft while maintaining safety weight-and-balance limits and minimizing operational disruption. 
 
 #### Potential Solutions:
   * Unified identity gateway: booking, doc checks, seat, bag declare, boarding pass, agent review, audit
@@ -167,13 +169,14 @@ Your challenge is to develop a solution that quickly adapts the existing passeng
 
 [Open the Passenger Clearance Subproblem](passenger-clearance-subproblem/README.md).
 
-### [Aircraft Load Subproblem](passenger-clearance-subproblem/README.md)
+### [Aircraft Loading](passenger-clearance-subproblem/README.md)
 ### [Insert Image]
 #### The Problem
 A mechanical issue causes the airline to replace the originally scheduled aircraft with a smaller aircraft shortly before departure. The new aircraft has different seating, baggage capacity and weight-and-balance-limits. 
 
 Passengers have already checked in, seats have been assigned, and baggage is being prepared for loading. Because the new aircraft has less capacity and different loading constraints, the existing passenger and baggage plan can no longer be used directly. Staff must quickly determine how to recognize passengers, baggage and available capacity while avoiding unnecessary delays. 
 
+#### Challenge
 Your challenge is to develop a solution that quickly adapts the existing passenger and baggage plan to the replacement aircraft while maintaining safety weight-and-balance limits and minimizing operational disruption. 
 
 #### Potential Solutions:
