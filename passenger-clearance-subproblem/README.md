@@ -12,6 +12,7 @@ Processing every passenger individually creates a long queue and increases the r
 
 Your challenge is to develop a solution that helps airport staff process large groups efficiently while maintaining accurate clearance information for each individual passenger.
 
+## The Challenge
 Your challenge is to develop a solution that quickly adapts the existing passenger and baggage plan to the replacement aircraft while maintaining safety weight-and-balance limits and minimizing operational disruption.
 
 ### Inputs and Expected Outputs 
